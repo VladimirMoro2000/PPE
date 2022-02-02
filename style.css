@@ -1,0 +1,59 @@
+body,html{
+    padding: 0px;
+    background-color: black;
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.container{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header" "font" "footer";
+}
+
+.font{
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-self: center;
+    align-items: center;
+    grid-area: font;
+    font-size: 30px;
+}
+
+.font p{
+    margin: 0px;
+}
+
+.header{
+    margin: 60px 10px;
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+.logo_image{
+    max-width: 200px;
+    animation: slidein 5s infinite ;
+
+}
+
+.footer{
+    margin-top: 100px;
+    height: 15px;
+    grid-area: footer;
+}
+
+.words{
+    font-size: 10px;
+    color: white
+}
+
+.words p{
+    text-align: center;
+
+}
